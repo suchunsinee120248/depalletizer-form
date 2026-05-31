@@ -363,7 +363,7 @@ function renderLog(data = []) {
               <td style="font-size:12px;font-weight:600;">${e.bottleType}</td>
               <td style="font-size:12px;">${condBadge}</td>
               <td class="mono">${e.pallets || e.layers || ""}</td>
-              <td class="mono" style="font-weight:700;">${Number(e.bottles || 0).toLocaleString()}</td>
+              <td class="mono" style="font-weight:700;">${e.total || 0}</td>
               <td class="td-note">${e.note || "—"}</td>
             </tr>
           `;
